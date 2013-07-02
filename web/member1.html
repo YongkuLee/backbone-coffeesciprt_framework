@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="utf-8"/>
+
+    <title>Ku Lee</title>
+    <meta name="description" content=""/>
+    <meta name="author" content="yklee/incombine"/>
+
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="resources/yaml/core/base.min.css" type="text/css"/>
+    <link rel="stylesheet" href="resources/css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="resources/css/commons.css" type="text/css"/>
+
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="resources/yaml/core/iehacks.min.css" type="text/css"/>
+    <![endif]-->
+
+    <script src="resources/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="resources/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="resources/js/vendor/autogrow.min.js"></script>
+    <script src="resources/js/vendor/jquery.form.js"></script>
+    <script src="resources/js/vendor/jquery.timeago.js"></script>
+    <script src="resources/js/vendor/underscore-min.js"></script>
+    <script src="resources/js/vendor/backbone-min.js"></script>
+    <script src="resources/js/member.js"></script>
+
+</head>
+<body>
+<div class="ym-wrapper">
+    <div class="ym-wbox">
+        <header>
+            <div class="ym-grid">
+                <div class="ym-g50 ym-gl left-menu">
+                    <span>Bapul 2.0</span>
+                    <span>Topics</span>
+                    <span>People</span>
+                </div>
+                <dl class="ym-g40 ym-gr right-menu">
+                    <li class="ym-gr">
+                        <span>Sign out</span>
+                    </li>
+                    <li class="ym-gr">
+                        <span>Ask into Bapul</span>
+                    </li>
+                    <li class="ym-gr">
+                        <dl class="menu-profile">
+                            <li class="ym-gl">
+                                <img src="resources/img/profile.png" alt="User Profile Picture" width="23px" height="23px"/>
+                            </li>
+                            <li class="ym-gl">
+                                <span>yklee</span>
+                            </li>
+                        </dl>
+                    </li>
+                </dl>
+            </div>
+        </header>
+        <main>
+            <div class="ym-wbox">
+                <div class="member-square ym-grid">
+                    <div class="profile-info ym-g40 ym-gl ym-grid">
+                        <div class="profile-picture ym-gl">
+                            <img width="100px" src="resources/img/profile.png" alt="Profile Picture"/>
+                        </div>
+                        <div class="profile-detail">
+                            <div class="profile-name"><span>Ku Lee</span></div>
+                            <div class="profile-score"><span>Q 10 &nbsp; A 10 &nbsp; P 10</span></div>
+                            <!--<div class="profile-level"><span>Expert(124)</span></div>-->
+                            <div class="profile-button">
+                                <button class="bp-button-shadow bp-button-black">Add Friend</button>
+                                <button class="bp-button-shadow bp-button-white">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topics-info">
+                        <div class="topics-title">
+                            <span>Study Topics</span>
+                        </div>
+                        <div class="topics-box">
+                            <dl class="">
+                                <li calss="tag">수학(3)</li>
+                                <li calss="tag">미적분(21)</li>
+                                <li calss="tag">통계확률(2)</li>
+                                <li calss="tag">과학(1)</li>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ym-wbox ym-grid">
+                <div class="question-box ym-gl">
+                    <div class="menu">
+                        <div class="ym-grid">
+                            <dl class="">
+                                <li class="ym-g50 ym-gl active">
+                                    <span>Ask(31)</span>
+                                </li>
+                                <li class="ym-g50 ym-gr">
+                                    <span>Answer(2)</span>
+                                </li>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="submenu">
+                        <div class="ym-grid">
+                            <dl>
+                                <li class="ym-gl">
+                                    <span>Live(27)</span>
+                                </li>
+                                <li class="ym-gl">
+                                    <span>&nbsp;&nbsp;&nbsp;</span>
+                                    <span>Unanswered(4)</span>
+                                </li>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="question-list">
+                        <dl>
+                            <li class="question ym-grid">
+                                <div class="question-image ym-g20 ym-gl">
+                                    <img src="resources/img/q1.jpg" alt="question_image" width="60px"/>
+                                </div>
+                                <div class="question-content ym-g66 ym-gl">
+                                    <p>
+                                        식이 좀 헷갈리는데;; 풀이해주시면 감사하겠습니다.
+                                    </p>
+                                </div>
+                                <div class="answer-status">
+                                    <span>3 Answers</span>
+                                </div>
+                            </li>
+                            <li class="question ym-grid">
+                                <div class="question-image ym-g20 ym-gl">
+                                    <img src="resources/img/q1.jpg" alt="question_image" width="60px"/>
+                                </div>
+                                <div class="question-content ym-g66 ym-gl">
+                                    <p>
+                                        식이 좀 헷갈리는데;; 풀이해주시면 감사하겠습니다.
+                                    </p>
+                                </div>
+                                <div class="answer-status">
+                                    <span>3 Answers</span>
+                                </div>
+                            </li>
+                            <li class="question ym-grid">
+                                <div class="question-image ym-g20 ym-gl">
+                                    <img src="resources/img/q1.jpg" alt="question_image" width="60px"/>
+                                </div>
+                                <div class="question-content ym-g66 ym-gl">
+                                    <p>
+                                        식이 좀 헷갈리는데;; 풀이해주시면 감사하겠습니다.
+                                    </p>
+                                </div>
+                                <div class="answer-status">
+                                    <span>3 Answers</span>
+                                </div>
+                            </li>
+                        </dl>
+                    </div>
+                </div>
+                <div class="lecture-box ym-gr">
+                    <div class="lecture-window">
+                        <div class="lecture-image">
+                            <img src="resources/img/q1.jpg" alt="question_image" width="550px" height="300px"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-box ym-gr">
+                    <div class="feed-window">
+                        <dl>
+                            <li class="feed ym-grid">
+                                <div class="member-image ym-g20 ym-gl">
+                                    <img width="50px" src="resources/img/profile.png" alt="Profile Picture"/>
+                                </div>
+                                <div class="message ym-gl">
+                                    <span>새로운 질문입니다.</span>
+                                </div>
+                            </li>
+                            <li class="feed ym-grid">
+                                <div class="member-image ym-g20 ym-gl">
+                                    <img width="50px" src="resources/img/profile.png" alt="Profile Picture"/>
+                                </div>
+                                <div class="message ym-gl">
+                                    <span>새로운 질문입니다.</span>
+                                </div>
+                            </li>
+                            <li class="feed ym-grid">
+                                <div class="member-image ym-g20 ym-gl">
+                                    <img width="50px" src="resources/img/profile.png" alt="Profile Picture"/>
+                                </div>
+                                <div class="message ym-gl">
+                                    <span>새로운 질문입니다.</span>
+                                </div>
+                            </li>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</div>
+</body>
+</html>

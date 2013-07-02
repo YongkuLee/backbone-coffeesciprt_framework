@@ -1,0 +1,164 @@
+/* ==========================================================================
+   elements defaults
+   ========================================================================== */
+
+html {
+	background: #f7f7f7;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+body,
+menu,
+aside,
+button {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+input,
+button,
+textarea {
+	border: 0;
+	background: transparent;
+}
+
+/* ==========================================================================
+   general elements
+   ========================================================================== */
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+/* ==========================================================================
+   display elements
+   ========================================================================== */
+
+#main-side {
+	top: 0;
+	bottom: 0;
+	padding: 20px 0;
+	position: fixed;
+	background: #60cef0;
+	z-index: 1;
+}
+
+#main-side:hover {
+	background: #5cc5e5;
+}
+
+#main-side button {
+	padding: 15px 30px;
+	display: block;
+}
+
+#main-side button i {
+	width: 25px;
+	height: 25px;
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#main-side #btn-notice i {
+	background: url('images/icon_notice.png');
+}
+
+#main-side #btn-notice:hover i {
+	background: url('images/icon_notice_.png');
+}
+
+#main-side #btn-report i {
+	background: url('images/icon_report.png');
+}
+
+#main-side #btn-report:hover i {
+	background: url('images/icon_report_.png');
+}
+
+#main {
+	top: 0;
+	left: 85px;
+	height: 100%;
+	padding: 20px;
+	position: relative;
+	z-index: 0;
+}
+
+#main menu {
+	top: 0;
+	left: 85px;
+	bottom: 0;
+	padding: 20px 0;
+	position: fixed;
+	background: #efefef;
+	border-right: 1px solid #e8e8e8;
+}
+
+#main menu button {
+	width: 160px;
+	display: block;
+	padding: 5px 20px;
+	color: #707070;
+	font-size: 12px;
+	text-align: left;
+}
+
+#main menu button:hover {
+	color: #1b1b1b;
+	background: #fcfcfc;
+}
+
+#main .collection {
+	left: 140px;
+	width: 530px;
+	padding: 0 20px;
+	position: relative;
+}
+
+#main .collection li {
+	margin: 0 0 10px 0;
+	padding: 20px;
+	border: 1px solid #ddd;
+}

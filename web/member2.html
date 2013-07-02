@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="utf-8"/>
+
+    <title>Ku Lee</title>
+    <meta name="description" content=""/>
+    <meta name="author" content="yklee/incombine"/>
+
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="resources/yaml/core/base.min.css" type="text/css"/>
+    <link rel="stylesheet" href="resources/css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="resources/css/commons2.css" type="text/css"/>
+
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="resources/yaml/core/iehacks.min.css" type="text/css"/>
+    <![endif]-->
+
+    <script src="resources/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="resources/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="resources/js/vendor/autogrow.min.js"></script>
+    <script src="resources/js/vendor/jquery.form.js"></script>
+    <script src="resources/js/vendor/jquery.timeago.js"></script>
+    <script src="resources/js/vendor/underscore-min.js"></script>
+    <script src="resources/js/vendor/backbone-min.js"></script>
+    <script src="resources/js/member2.js"></script>
+</head>
+<body>
+<header>
+    <div class="ym-wrapper">
+        <div class="ym-wbox">
+            <div class="ym-grid">
+                <div class="ym-g50 ym-gl left-menu">
+                    <div class="ym-gl bp-logo">
+                        <span>Bapul 2.0</span>
+                    </div>
+                    <span>Topics</span>
+                    <span>&nbsp;&nbsp;&nbsp;</span>
+                    <span>People</span>
+                </div>
+                <dl class="ym-g40 ym-gr right-menu">
+                    <li class="ym-gr">
+                        <span>Sign out</span>
+                    </li>
+                    <li class="ym-gr">
+                        <span>Ask into Bapul</span>
+                    </li>
+                    <li class="ym-gr">
+                        <dl class="menu-profile">
+                            <li class="ym-gl">
+                                <img src="resources/img/profile.png" alt="User Profile Picture" width="23px"
+                                     height="23px"/>
+                            </li>
+                            <li class="ym-gl">
+                                <span>yklee</span>
+                            </li>
+                        </dl>
+                    </li>
+                </dl>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+<div class="ym-wrapper">
+<div class="ym-wbox">
+<div class="ym-grid">
+<div class="member-square ym-gl">
+    <div class="member-box">
+        <script id="member-template" type="text/template">
+            <div class="profile-info ym-gl">
+                <div class="profile-picture">
+                    <img width="80px" src="<%= face.filename %>" alt="Profile Picture"/>
+                </div>
+                <div class="profile-detail ">
+                    <div class="profile-name"><span class="bp-large-user"><%= username %></span></div>
+                    <div class="profile-score">
+                        <p>Q: <span><%= stats.questionCount %></span></p>
+
+                        <p>A: <span><%= stats.replyCount %></span></p>
+
+                        <p>P: <span><%= stats.activity %></span></p>
+                    </div>
+                </div>
+                <div class="profile-button">
+                    <button class="bp-button-blue">Add Friend</button>
+                    <button class="bp-button-black view-button">View Profile</button>
+                </div>
+            </div>
+        </script>
+        <script id="members-template" type="text/template">
+            <div class="member">
+            </div>
+        </script>
+    </div>
+    <div class="topics-info ym-gl">
+        <div class="topics-title">
+            <span>Study Topics</span>
+        </div>
+        <div class="topics-box">
+            <script id="topic-template" type="text/template">
+                <span><%= title %></span>
+            </script>
+            <script id="topics-template" type="text/template">
+                <dl></dl>
+            </script>
+        </div>
+    </div>
+</div>
+<div class="square-box">
+<div class="member-profile" style="display: none;">
+    <script id="profile-template" type="text/template">
+
+        <div class="information-box">
+            <div class="personal-information">
+                <div class="title">
+                    <span>Personal Information</span>
+                </div>
+                <div class="personal">
+                    <div class="title">학교</div>
+                    <div class="content">
+                        <p>고려대학교 수학과</p>
+
+                        <p><span class="description">2학년</span></p>
+                    </div>
+                </div>
+                <div class="personal">
+                    <div class="title">공부수준</div>
+                    <div class="content">
+                        <p>잘하는 편</p>
+                    </div>
+                </div>
+                <div class="personal">
+                    <div class="title">성적</div>
+                    <div class="content">
+                        <p>상위권</p>
+
+                        <p><span class="description">5%</span></p>
+                    </div>
+                </div>
+                <div class="personal last">
+                    <div class="title">수상경력</div>
+                    <div class="content">
+                        <p>수학경시대회 우수상</p>
+
+                        <p>과학경시대회 우수상</p>
+                    </div>
+                </div>
+            </div>
+            <div class="statistics-information">
+                <div class="title">
+                    <span>Statistics Information</span>
+                </div>
+                <div class="graph"></div>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <td>
+                                <span>Login Count</span>
+                                <span class="count">15</span>
+                            </td>
+                            <td>
+                                <span>Ask Count</span>
+                                <span class="count">124</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Friend Count</span>
+                                <span class="count">5</span>
+                            </td>
+                            <td>
+                                <span>Answer Count</span>
+                                <span class="count">10</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="content-box">
+
+        </div>
+
+    </script>
+</div>
+<div class="member-content">
+    <div class="question-box ym-gl">
+        <div class="menu">
+            <div class="ym-grid">
+                <dl class="">
+                    <li class="ym-g50 ym-gl active">
+                        <span class="bp-large-menu">Ask(31)</span>
+                    </li>
+                    <li class="ym-g50 ym-gr">
+                        <span class="bp-large-menu">Answer(2)</span>
+                    </li>
+                </dl>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="ym-grid">
+                <dl>
+                    <li class="ym-gl">
+                        <span class="bp-small-menu">Live(27)</span>
+                    </li>
+                    <li class="ym-gl">
+                        <span>&nbsp;&nbsp;&nbsp;</span>
+                        <span class="bp-small-menu">Unanswered(4)</span>
+                    </li>
+                </dl>
+            </div>
+        </div>
+        <script id="questions-template" type="text/template">
+            <div class="question-roll">
+                <div class="question-list">
+                </div>
+                <div id="next"><span>next</span></div>
+            </div>
+        </script>
+        <script id="question-template" type="text/template">
+            <div class="answer-status <%= replyActive %>">
+                <span><%= replies.length %></span><span>&nbsp;</span><span>Answers</span>
+            </div>
+            <div class="question-user">
+                <span class="bp-small-user"><%= member.username %></span>
+                <time class="bp-time" datetime="<%= time %>"></time>
+            </div>
+            <div class="question-content">
+                <%= text %>
+            </div>
+            <div class="question-topic">
+                <% _(topics).each(function(topic){ %>
+                <span><%= topic.title %></span>
+                <% }); %>
+            </div>
+            <div class="question-background">
+
+            </div>
+        </script>
+    </div>
+    <div class="feed-roll">
+        <div class="lecture-box">
+            <div class="lecture-window">
+                <div class="lecture-image">
+                    <img src="resources/img/q1.jpg" alt="question_image" width="100%" height="100%"
+                         style="height: 100%;"/>
+                </div>
+            </div>
+        </div>
+        <div class="feed-box">
+            <script id="feeds-template" type="text/template">
+                <div class="feed-window">
+                </div>
+            </script>
+            <script id="feed-template" type="text/template">
+                <div class="member-image" id="<%= member.principal %>">
+                    <% if(member.face != null){ %>
+                    <img width="50px" src="<%= member.face.filename %>" alt="Profile Picture"/>
+                    <% }else{ %>
+                    <img width="50px" src="resources/img/profile.png" alt="Profile Picture"/>
+                    <% } %>
+                </div>
+                <div class="member-info">
+                    <div class="member-id bp-small-user">
+                        <span><%= member.username %></span>
+                        <time
+                                class="bp-time" datetime="<%= time %>"></time>
+                    </div>
+                    <% if(stuff == "REPLY"){ %>
+                    <div>
+                        <% _(question.topics).each(function(topic){ %>
+                        <span class="bp-topic"><%= topic.title %></span>
+                        <% }); %>
+                    </div>
+                    <% } %>
+                    <div class="message">
+                        <%= text %>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+    <div class="question-detail-roll" style="display: none;">
+        <div class="question-detail-box">
+            <script id="question-detail-template" type="text/template">
+                <div class="question-detail">
+                    <div class="question-close">
+                        <button class="close-button">닫기</button>
+                    </div>
+                    <div class="question-image">
+                        <% _(images).each(function(image){ %>
+                        <img src="<%= image %>"/>
+                        <% }); %>
+                    </div>
+                    <div class="question-text">
+                        <%= text %>
+                    </div>
+
+                    <div class="reply-box">
+                        <div class="reply-title">
+                            <h1 class="bp-title">답변들</h1>
+                        </div>
+                        <% _(replies).each(function(reply){ %>
+                        <div class="reply">
+                            <div class="reply-member">
+                                <span class="bp-small-user"><%= reply.member.username %></span>
+                                <time class="bp-time" datetime="<%= reply.time %>"></time>
+                            </div>
+                            <div class="reply-image">
+                                <% _(reply.images).each(function(image){ %>
+                                <img src="<%= image %>"/>
+                                <% }); %>
+                            </div>
+                            <div class="reply-text">
+                                <%= reply.text %>
+                            </div>
+                            <div class="reply-topic">
+                                <% _(reply.topics).each(function(topic){ %>
+                                <span class="bp-topic"><%= topic.title %></span>
+                                <% }); %>
+                            </div>
+                        </div>
+                        <% }); %>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<footer>
+    <div class="">
+        <span>Copyright &copy; 2013</span>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <span>I &amp; Combine</span>
+    </div>
+</footer>
+</body>
+</html>

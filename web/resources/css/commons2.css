@@ -1,0 +1,377 @@
+/** top navigation **/
+.right-menu > li {
+    margin: 0 10px;
+}
+
+.menu-profile > li {
+    margin-left: 10px;
+}
+
+/** common layout **/
+.ym-wrapper {
+    min-width: 760px;
+    max-width: 1156px;
+}
+
+.ym-wbox {
+    padding: 10px 30px 10px 10px;
+}
+
+/** Member square **/
+.member-square {
+    width: 135px;
+}
+
+.member-square > div {
+    margin: 10px;
+}
+
+.member-square .profile-info {
+    position: relative;
+}
+
+.member-square .profile-info .profile-picture {
+    width: 110px;
+    height: 110px;
+    border: 1px solid #dfdfdf;
+}
+
+.member-square .profile-info .profile-picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.member-square .profile-info .profile-detail {
+    height: 100px;
+    width: 135px;
+}
+
+.member-square .profile-info .profile-detail > div {
+    line-height: 25px;
+}
+
+.member-square .profile-info .profile-button {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 135px;
+}
+
+.member-square .profile-info .profile-button > button {
+    margin-top: 10px;
+}
+
+/** topic box **/
+.topics-info .topics-title {
+    color: #5c5c5c;
+}
+
+.topics-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    height: 4em;
+}
+
+.topics-box > dl {
+    margin: 0;
+}
+
+.topics-box li {
+    display: block;
+    float: left;
+    border: solid #b9e3ef 1px;
+    padding: 2px 5px;
+    margin: 2px 5px;
+    font-size: 12px;
+    color: #1b7ea8;
+}
+
+/** question box **/
+.question-box {
+    width: 401px;
+}
+
+.question-box > div {
+}
+
+.question-box .question-roll {
+    overflow-x: hidden;
+    overflow: auto;
+    height: 600px;
+}
+
+.question {
+    padding: 0px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.question .question-user {
+    margin: 10px 15px;
+}
+
+.question .question-content {
+    margin: 5px 15px;
+}
+
+.question .question-topic {
+    margin: 10px 15px;
+}
+
+.question .question-topic > span {
+    font-size: 11px;
+    color: #a6a6a6;
+    margin-right: 8px;
+}
+
+.question .answer-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    background: #bbbbbb;
+    color: #ffffff;
+}
+
+.question .question-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.question .answer-status.active {
+    background: #f67742;
+}
+
+.question-list > dl {
+    margin: 0;
+}
+
+/** Question Menu **/
+
+.menu > div {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.menu dl {
+    margin: 0;
+}
+
+.menu dl li {
+    border: 1px #d9d9d9 solid;
+    background-color: #e6e6e6;
+    color: #888888;
+}
+
+.menu dl .active {
+    background-color: #ffffff;
+    color: #00b3eb;
+}
+
+.submenu > div {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 11.5px;
+}
+
+.submenu dl {
+    margin: 0;
+}
+
+/** Lecture Box **/
+.feed-roll {
+    overflow-x: hidden;
+    overflow: auto;
+    height: 680px;
+}
+
+.lecture-box {
+    min-width: 400px;
+    position: relative;
+    width: 98%;
+    float: right;
+    border: 1px solid #f2f2f2;
+}
+
+.lecture-window {
+    width: 99%;
+}
+
+.lecture-window .lecture-image {
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+}
+
+/** Feed Box **/
+.feed-box {
+    min-width: 400px;
+    position: relative;
+    width: 98%;
+    float: right;
+    margin-top: 30px;
+}
+
+.feed-window {
+    position: relative;
+    width: 99%;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+}
+
+.feed {
+    display: table;
+    width: 250px;
+    margin: 13px;
+    float: left;
+}
+
+.feed .member-image {
+    float: left;
+    width: 50px;
+}
+
+.feed .member-info {
+    margin-left: 60px;
+}
+
+.feed .member-info > div {
+    position: relative;
+    display: table;
+    margin-top: 5px;
+}
+
+.feed .member-info > .member-id {
+    margin: 0;
+}
+
+/** Question Detail **/
+.question-detail-roll {
+    overflow-x: hidden;
+    overflow: auto;
+    height: 680px;
+}
+
+.question-detail-box {
+    position: relative;
+    width: 98%;
+    min-width: 400px;
+    border: 1px solid #f2f2f2;
+    background-color: #ffffff;
+    float: right;
+    margin-top: 10px;
+}
+
+.question-detail {
+    margin: auto;
+    position: relative;
+    width: 99%;
+}
+
+.question-detail .question-image {
+    width: 100%;
+}
+
+.question-detail .question-image > img {
+    width: 100%;
+}
+
+.question-detail .reply-box {
+    margin-top: 20px;
+}
+
+.question-detail .reply-box .reply {
+    margin-top: 15px;
+}
+
+.reply .reply-image {
+    width: 100%;
+}
+
+.reply .reply-image img {
+    width: 100%;
+}
+
+/** Member Profile **/
+.member-profile {
+
+}
+
+.information-box {
+    margin-top: 10px;
+    width: 501px;
+    overflow-x: hidden;
+    overflow: auto;
+    height: 670px;
+}
+
+.information-box .title {
+    margin-bottom: 15px;
+    font-size: 15px;
+    border: 0;
+}
+
+.information-box > div {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 99%;
+}
+
+.information-box > div > div {
+    margin: 10px 20px;
+    padding-bottom: 10px;
+}
+
+.information-box .personal-information > div {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.information-box .personal-information > .last {
+    border: 0;
+}
+
+.information-box .personal-information .personal .content > p {
+    font-size: 13px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.information-box .personal-information .personal .content .description {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.information-box .statistics-information {
+
+}
+
+.information-box .statistics-information .table > table {
+    width: 99%;
+}
+
+.information-box .statistics-information .table > table td {
+    border: 1px solid #e0e0e0;
+    background-color: #f4f4f4;
+}
+
+.information-box .statistics-information .table > table span {
+    margin: 10px;
+    display: block;
+    float: left;
+}
+
+.information-box .statistics-information .table > table .count {
+    color: #00b3eb;
+    float: right;
+}

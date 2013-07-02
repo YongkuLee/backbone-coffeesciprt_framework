@@ -1,0 +1,145 @@
+/* Google Font API */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(../yaml/screen/screen-PAGE-layout.css);
+@import url(../yaml/print/print.css);
+@import url(../yaml/forms/gray-theme.css);
+
+body {
+    font-family: 'Nanum Gothic', serif;
+    background-color: #f3f3f3;
+}
+
+header {
+    width: 100%;
+    height: 45px;
+    background-color: #00b3eb;
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+    color: #ffffff;
+    border-bottom: 1px solid #007ca2;
+}
+
+main {
+    padding-top: 0.1em;
+    background-color: #f3f3f3;
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer > div {
+    display: block;
+}
+
+dl {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.bp-logo {
+    width: 135px;
+}
+
+.bp-topic {
+    float: left;
+    display: block;
+    padding: 2px 5px;
+    border: 1px solid #d5d5d5;
+    color: #8a8a8a;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.bp-button-shadow {
+    -moz-box-shadow: 2px 2px 4px #019dce;
+    -webkit-box-shadow: 2px 2px 4px #019dce;
+    box-shadow: 2px 2px 4px #019dce;
+}
+
+.bp-button-black {
+    background: #5d5d5d;
+    border: 0;
+    padding: 7px 10px;
+    font-size: 13px;
+    color: #ffffff;
+    width: 110px;
+    border-bottom: 1px solid #3e3e3e;
+    border-right: 1px solid #3e3e3e;
+}
+
+.bp-button-black.active {
+    background: #3e3e3e;
+    border: 0;
+    padding: 7px 10px;
+    font-size: 13px;
+    color: #ffffff;
+    width: 110px;
+    border-bottom: 1px solid #5d5d5d;
+    border-right: 1px solid #5d5d5d;
+}
+
+.bp-button-white {
+    background-color: #f4f4f4;
+    border: 0;
+    padding: 7px 10px;
+    font-size: 13px;
+    color: #5e5e5e;
+    width: 110px;
+}
+
+.bp-button-blue {
+    background-color: #00b3eb;
+    border: 0;
+    padding: 7px 10px;
+    font-size: 13px;
+    color: #ffffff;
+    width: 110px;
+    border-bottom: 1px solid #007ca2;
+    border-right: 1px solid #007ca2;
+}
+
+.bp-large-user {
+    color: #00b3eb;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bp-middle-user {
+    color: #00b3eb;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bp-small-user {
+    color: #00b3eb;
+    font-size: 14px;
+}
+
+.bp-large-menu {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 5px 10px;
+}
+
+.bp-middle-menu {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 4px 8px;
+}
+
+.bp-small-menu {
+    font-size: 13px;
+    margin: 2px 6px;
+}
+
+.bp-time {
+    font-size: 11px;
+    color: #acacac;
+    margin-left: 10px;
+}

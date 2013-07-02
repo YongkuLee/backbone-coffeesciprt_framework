@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>바로풀기 관리자</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="resources/yaml/core/base.min.css" type="text/css"/>
+    <link rel="stylesheet" href="resources/css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="resources/css/commons.css" type="text/css"/>
+
+    <script src="resources/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="resources/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="resources/js/vendor/autogrow.min.js"></script>
+    <script src="resources/js/vendor/jquery.form.js"></script>
+    <script src="resources/js/vendor/jquery.timeago.js"></script>
+    <script src="resources/js/vendor/underscore-min.js"></script>
+    <script src="resources/js/vendor/backbone-min.js"></script>
+    <script src="resources/js/member.js"></script>
+</head>
+<body>
+<script id="question-template" type="text/template">
+    <p><%= id %>
+    <p><%= text %>
+    <p></p>
+    <time datetime="<%= time %>"></time>
+</script>
+<script id="questions-template" type="text/template">
+    <ul class="collection">
+    </ul>
+</script>
+<script id="app-template" type="text/template">
+    <aside id="main-side">
+        <button id="btn-question"><i></i></button>
+    </aside>
+</script>
+</body>
+</html>

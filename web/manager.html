@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>바로풀기 관리자</title>
+		<meta name="viewport" content="width=device-width">
+
+		<link href="resources/css/vendor/normalize.css" rel="stylesheet"/>
+		<link href="resources/css/vendor/main.css" rel="stylesheet"/>
+		<link href="resources/css/manager.css" rel="stylesheet"/>
+
+		<script src="resources/js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="resources/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="resources/js/vendor/autogrow.min.js"></script>
+		<script src="resources/js/vendor/jquery.form.js"></script>
+		<script src="resources/js/vendor/jquery.timeago.js"></script>
+		<script src="resources/js/vendor/underscore-min.js"></script>
+		<script src="resources/js/vendor/backbone-min.js"></script>
+		<script src="resources/js/manager.js"></script>
+</head>
+<body>
+</body>
+</html>
+<script id="report-template" type="text/template">
+		<p><%= principal %>
+		<p><%= reason %>
+		<p>
+				<time datetime="<%= time %>"></time>
+</script>
+<script id="reports-template" type="text/template">
+		<ul class="collection"></ul>
+</script>
+<script id="notice-template" type="text/template">
+		<p><%= title %>
+		<p><%= text %>
+		<p></p>
+		<time datetime="<%= time %>"></time>
+</script>
+<script id="notices-template" type="text/template">
+		<menu>
+				<button>공지사항 작성하기</button>
+		</menu>
+		<ul class="collection"></ul>
+</script>
+<script id="app-template" type="text/template">
+		<aside id="main-side">
+				<button id="btn-notice"><i></i></button>
+				<button id="btn-report"><i></i></button>
+		</aside>
+</script>

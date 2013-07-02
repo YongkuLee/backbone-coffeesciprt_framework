@@ -1,0 +1,169 @@
+/** top navigation **/
+.right-menu > li {
+    margin-left: 20px;
+}
+
+.menu-profile > li {
+    margin-left: 10px;
+}
+
+/** common layout **/
+.ym-wrapper {
+    min-width: 760px;
+    max-width: 1041px;
+}
+
+.ym-wbox {
+    padding: 10px;
+}
+
+/** Member square **/
+.member-square {
+    background-color: #00b3eb;
+    color: white;
+    font-size: 12px;
+}
+
+.member-square > div {
+    margin: 10px;
+}
+
+.member-square .profile-info {
+}
+
+.member-square .profile-info .profile-detail {
+    position: relative;
+    margin-left: 120px;
+    height: 100px;
+    width: 280px;
+}
+
+.member-square .profile-info .profile-detail > div {
+    line-height: 25px;
+}
+
+.member-square .profile-info .profile-name {
+    font-size: 20px;
+}
+
+.member-square .profile-info .profile-score {
+    font-size: 16px;
+}
+
+.member-square .profile-info .profile-button {
+    position: absolute;
+    bottom: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.member-square .topics-info {
+    margin-left: 420px;
+}
+
+/** topic box **/
+.topics-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    height: 4em;
+}
+
+.topics-box li {
+    display: block;
+    float: left;
+    border: solid #54cef5 1px;
+    padding: 2px 5px;
+    margin: 2px 5px;
+}
+
+/** question box **/
+.question-box {
+    width: 401px;
+}
+
+.question-box > div {
+}
+
+.question {
+    border: solid #c8c8c8 1px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.question .question-image {
+    margin: 10px;
+}
+
+.question .question-content {
+    margin: 10px;
+}
+
+.question .answer-status {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    background: #fff;
+    border: 1px dotted #c8c8c8;
+    padding: 0 2px;
+}
+
+.question-list > dl{
+    margin : 0;
+}
+
+.menu > div {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.menu dl {
+    margin: 0;
+}
+
+.menu dl li {
+    border: 1px #d9d9d9 solid;
+    background-color: #e6e6e6;
+    color: #888888;
+}
+
+.menu dl .active {
+    background-color: #ffffff;
+    color: #00b3eb;
+}
+
+.submenu > div {
+    text-align: center;
+    margin: 10px 0;
+    font-size : 11.5px;
+}
+
+.submenu dl {
+    margin: 0;
+}
+
+.feed-box {
+    width: 600px;
+}
+
+.lecture-box {
+    width: 600px;
+}
+
+.lecture-window {
+    margin: 10px;
+}
+
+.feed-window {
+    width: 550px;
+}
+
+.feed {
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.feed .message {
+    margin: 10px 0;
+}
